@@ -1,0 +1,178 @@
+@import "../../_config.scss";
+
+/*Name Page Grid*/
+
+/*.name-wrapper > div {
+	background: #f96855;
+}
+
+.name-wrapper > div:nth-child(odd) {
+	background: #ddd;
+}*/
+
+.name-wrapper {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 1em;
+	grid-auto-rows: minmax(135px, auto);
+	text-align: center;
+	padding: 1em 1em 1em 1em;
+
+	/*Name Boxes*/
+	.box1 {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		grid-column: 5/9;
+		grid-row: 1/3;
+		text-align: right;
+
+		.name {
+			font-size: 3em;
+			margin-bottom: 0;
+			font-weight: bold;
+		}
+
+		.trans {
+			font-size: 1.5em;
+			margin-top: 0;
+			opacity: 0.75;
+		}
+
+	}
+
+	.box2 {
+		background: #f96855;
+		grid-column: 5/9;
+		grid-row: 3/7;
+		text-align: left;
+		padding: 0px 2em 0px 2em;
+
+		.quote {
+			opacity: 0.65;
+			font-size: 2em;
+		}
+
+	}
+
+	.box3 {
+		grid-column: 1/5;
+		grid-row: 1/3;
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+
+	.box4 {
+		background: #f96855;
+		grid-column: 1/3;
+		grid-row: 3/5;
+	}
+
+	.box5 {
+		background: #f96855;
+		grid-column: 3/5;
+		grid-row: 3/5;
+	}
+
+	.box6 {
+		background: #f96855;
+		grid-column: 1/5;
+		grid-row: 5/7;
+	}
+
+}
+
+
+/*TABLET*/
+@media screen and (max-width: 1024px) {
+	/*Name Page Grid*/
+	.name-wrapper {
+		grid-template-columns: repeat(4, 1fr);
+
+		/*Name Boxes*/
+		.box1 {
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			grid-column: 3/5;
+			grid-row: 1/2;
+			text-align: left;
+
+			.name {
+				font-size: 2.5em;
+			}
+		}
+
+		.box2 {
+			grid-column: 1/5;
+			grid-row: 2/4;
+			padding: 0px 1.5em 0px 1.5em;
+
+			.quote {
+				font-size: 1.5em;
+			}
+		}
+
+		.box3 {
+			grid-column: 1/3;
+			grid-row: 1/2;
+		}
+
+		.box4 {
+			grid-column: 1/3;
+			grid-row: 6/7;
+		}
+
+		.box5 {
+			grid-column: 3/5;
+			grid-row: 6/7;
+		}
+
+		.box6 {
+			grid-column: 1/5;
+			grid-row: 4/6;
+		}
+	}
+}
+
+
+/*MOBILE*/
+@media screen and (max-width: 400px) {
+	/*Name Boxes*/
+	.box1 {
+		grid-column: 1/5;
+		grid-row: 2/3;
+	}
+
+	.box2 {
+		grid-column: 1/5;
+		grid-row: 3/5;
+		padding: 0px 1em 0px 1em;
+
+		.quote {
+			font-size: 1em;
+		}
+	}
+
+	.box3 {
+		grid-column: 1/5;
+		grid-row: 1/2;
+		background-size: cover !important;
+	}
+
+	.box4 {
+		grid-column: 1/3;
+		grid-row: 6/7;
+	}
+
+	.box5 {
+		grid-column: 3/5;
+		grid-row: 6/7;
+	}
+
+	.box6 {
+		grid-column: 1/5;
+		grid-row: 5/6;
+	}
+}

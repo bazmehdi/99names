@@ -1,0 +1,22 @@
+@import '../../_config.scss';
+
+footer {
+	color: $black;
+	position:absolute;
+	bottom:0;
+	
+	div {
+        max-width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+		font-family: arial;
+    }
+
+	p {
+		text-align: center;
+		font-size: 0.85em;
+		padding: 1em 0em 0.5em 0em;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+}
