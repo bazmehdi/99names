@@ -17,14 +17,15 @@ var SCSS_SRC = './src/App.scss';
 var SCSS_DEST = './src/css';
 
 // Compile SCSS
-gulp.task('compile_scss', function(){
+gulp.task('compile_scss', function(cb){
 
     gulp.src(SCSS_SRC)
     .pipe(sass().on('error', sass.logError))
-    .pipe(minifyCSS)
+    .pipe(minifyCSS())
     .pipe(rename({ suffix: '.min'}))
     .pipe(changed(SCSS_DEST))
     .pipe(gulp.dest(SCSS_DEST));
+    cb()
         
 });
         
