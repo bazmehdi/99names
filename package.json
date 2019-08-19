@@ -10,7 +10,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,15 +37,21 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "event-stream": "^4.0.1",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-changed": "^4.0.0",
     "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "nodemon": "^1.19.1",
     "run-sequence": "^2.2.1",
-    "webpack": "^4.39.2"
+    "terser": "^4.1.4",
+    "uglify-js": "^3.6.0"
   }
 }
